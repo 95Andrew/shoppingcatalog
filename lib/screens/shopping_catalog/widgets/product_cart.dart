@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:shoppingcatalog/models/product/product.dart';
-import 'package:shoppingcatalog/screens/shopping_catalog/widgets/rectangle_container.dart';
+import 'package:shoppingcatalog/widgets/circle_container.dart';
+import 'package:shoppingcatalog/widgets/rectangle_container.dart';
 import 'package:shoppingcatalog/shared/app_colors.dart';
 import 'package:shoppingcatalog/shared/app_const.dart';
 import 'package:shoppingcatalog/shared/app_sizes.dart';
 import 'package:shoppingcatalog/shared/app_text_styles.dart';
-
-import 'circle_container.dart';
 
 class ProductCart extends StatelessWidget {
   final Product product;

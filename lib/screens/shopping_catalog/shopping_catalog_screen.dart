@@ -26,7 +26,11 @@ class ShoppingCatalogScreen extends StatelessWidget {
               );
             }
             if (state is ShoppingCatalogErrorStat) {
-              return const ErrorContent();
+              return ErrorContent(
+                onTapRetry: () => BlocProvider.of<ShoppingCatalogBloc>(context).add(
+                  LoadProductsEvent(),
+                ),
+              );
             }
             return const SizedBox();
           },
