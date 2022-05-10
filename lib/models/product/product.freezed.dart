@@ -20,13 +20,13 @@ Product _$ProductFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Product {
-  int? get id => throw _privateConstructorUsedError;
-  String? get title => throw _privateConstructorUsedError;
-  double? get price => throw _privateConstructorUsedError;
-  String? get description => throw _privateConstructorUsedError;
-  String? get category => throw _privateConstructorUsedError;
-  String? get image => throw _privateConstructorUsedError;
-  Rating? get rating => throw _privateConstructorUsedError;
+  int get id => throw _privateConstructorUsedError;
+  String get title => throw _privateConstructorUsedError;
+  double get price => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
+  String get category => throw _privateConstructorUsedError;
+  String get image => throw _privateConstructorUsedError;
+  Rating get rating => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -38,15 +38,15 @@ abstract class $ProductCopyWith<$Res> {
   factory $ProductCopyWith(Product value, $Res Function(Product) then) =
       _$ProductCopyWithImpl<$Res>;
   $Res call(
-      {int? id,
-      String? title,
-      double? price,
-      String? description,
-      String? category,
-      String? image,
-      Rating? rating});
+      {int id,
+      String title,
+      double price,
+      String description,
+      String category,
+      String image,
+      Rating rating});
 
-  $RatingCopyWith<$Res>? get rating;
+  $RatingCopyWith<$Res> get rating;
 }
 
 /// @nodoc
@@ -71,41 +71,37 @@ class _$ProductCopyWithImpl<$Res> implements $ProductCopyWith<$Res> {
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       price: price == freezed
           ? _value.price
           : price // ignore: cast_nullable_to_non_nullable
-              as double?,
+              as double,
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       category: category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       image: image == freezed
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
       rating: rating == freezed
           ? _value.rating
           : rating // ignore: cast_nullable_to_non_nullable
-              as Rating?,
+              as Rating,
     ));
   }
 
   @override
-  $RatingCopyWith<$Res>? get rating {
-    if (_value.rating == null) {
-      return null;
-    }
-
-    return $RatingCopyWith<$Res>(_value.rating!, (value) {
+  $RatingCopyWith<$Res> get rating {
+    return $RatingCopyWith<$Res>(_value.rating, (value) {
       return _then(_value.copyWith(rating: value));
     });
   }
@@ -118,16 +114,16 @@ abstract class _$$_ProductCopyWith<$Res> implements $ProductCopyWith<$Res> {
       __$$_ProductCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int? id,
-      String? title,
-      double? price,
-      String? description,
-      String? category,
-      String? image,
-      Rating? rating});
+      {int id,
+      String title,
+      double price,
+      String description,
+      String category,
+      String image,
+      Rating rating});
 
   @override
-  $RatingCopyWith<$Res>? get rating;
+  $RatingCopyWith<$Res> get rating;
 }
 
 /// @nodoc
@@ -150,34 +146,34 @@ class __$$_ProductCopyWithImpl<$Res> extends _$ProductCopyWithImpl<$Res>
     Object? rating = freezed,
   }) {
     return _then(_$_Product(
-      id: id == freezed
+      id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int?,
-      title: title == freezed
+              as int,
+      title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
-              as String?,
-      price: price == freezed
+              as String,
+      price == freezed
           ? _value.price
           : price // ignore: cast_nullable_to_non_nullable
-              as double?,
-      description: description == freezed
+              as double,
+      description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      category: category == freezed
+              as String,
+      category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as String?,
-      image: image == freezed
+              as String,
+      image == freezed
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rating: rating == freezed
+              as String,
+      rating == freezed
           ? _value.rating
           : rating // ignore: cast_nullable_to_non_nullable
-              as Rating?,
+              as Rating,
     ));
   }
 }
@@ -185,32 +181,26 @@ class __$$_ProductCopyWithImpl<$Res> extends _$ProductCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_Product implements _Product {
-  const _$_Product(
-      {this.id,
-      this.title,
-      this.price,
-      this.description,
-      this.category,
-      this.image,
-      this.rating});
+  const _$_Product(this.id, this.title, this.price, this.description,
+      this.category, this.image, this.rating);
 
   factory _$_Product.fromJson(Map<String, dynamic> json) =>
       _$$_ProductFromJson(json);
 
   @override
-  final int? id;
+  final int id;
   @override
-  final String? title;
+  final String title;
   @override
-  final double? price;
+  final double price;
   @override
-  final String? description;
+  final String description;
   @override
-  final String? category;
+  final String category;
   @override
-  final String? image;
+  final String image;
   @override
-  final Rating? rating;
+  final Rating rating;
 
   @override
   String toString() {
@@ -257,30 +247,30 @@ class _$_Product implements _Product {
 
 abstract class _Product implements Product {
   const factory _Product(
-      {final int? id,
-      final String? title,
-      final double? price,
-      final String? description,
-      final String? category,
-      final String? image,
-      final Rating? rating}) = _$_Product;
+      final int id,
+      final String title,
+      final double price,
+      final String description,
+      final String category,
+      final String image,
+      final Rating rating) = _$_Product;
 
   factory _Product.fromJson(Map<String, dynamic> json) = _$_Product.fromJson;
 
   @override
-  int? get id => throw _privateConstructorUsedError;
+  int get id => throw _privateConstructorUsedError;
   @override
-  String? get title => throw _privateConstructorUsedError;
+  String get title => throw _privateConstructorUsedError;
   @override
-  double? get price => throw _privateConstructorUsedError;
+  double get price => throw _privateConstructorUsedError;
   @override
-  String? get description => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
   @override
-  String? get category => throw _privateConstructorUsedError;
+  String get category => throw _privateConstructorUsedError;
   @override
-  String? get image => throw _privateConstructorUsedError;
+  String get image => throw _privateConstructorUsedError;
   @override
-  Rating? get rating => throw _privateConstructorUsedError;
+  Rating get rating => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_ProductCopyWith<_$_Product> get copyWith =>

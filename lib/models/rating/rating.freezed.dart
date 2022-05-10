@@ -21,7 +21,7 @@ Rating _$RatingFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Rating {
   double? get rate => throw _privateConstructorUsedError;
-  int? get count => throw _privateConstructorUsedError;
+  int get count => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -32,7 +32,7 @@ mixin _$Rating {
 abstract class $RatingCopyWith<$Res> {
   factory $RatingCopyWith(Rating value, $Res Function(Rating) then) =
       _$RatingCopyWithImpl<$Res>;
-  $Res call({double? rate, int? count});
+  $Res call({double? rate, int count});
 }
 
 /// @nodoc
@@ -56,7 +56,7 @@ class _$RatingCopyWithImpl<$Res> implements $RatingCopyWith<$Res> {
       count: count == freezed
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
     ));
   }
 }
@@ -66,7 +66,7 @@ abstract class _$$_RatingCopyWith<$Res> implements $RatingCopyWith<$Res> {
   factory _$$_RatingCopyWith(_$_Rating value, $Res Function(_$_Rating) then) =
       __$$_RatingCopyWithImpl<$Res>;
   @override
-  $Res call({double? rate, int? count});
+  $Res call({double? rate, int count});
 }
 
 /// @nodoc
@@ -84,14 +84,14 @@ class __$$_RatingCopyWithImpl<$Res> extends _$RatingCopyWithImpl<$Res>
     Object? count = freezed,
   }) {
     return _then(_$_Rating(
-      rate: rate == freezed
+      rate == freezed
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as double?,
-      count: count == freezed
+      count == freezed
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as int,
     ));
   }
 }
@@ -99,7 +99,7 @@ class __$$_RatingCopyWithImpl<$Res> extends _$RatingCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_Rating implements _Rating {
-  const _$_Rating({this.rate, this.count});
+  const _$_Rating(this.rate, this.count);
 
   factory _$_Rating.fromJson(Map<String, dynamic> json) =>
       _$$_RatingFromJson(json);
@@ -107,7 +107,7 @@ class _$_Rating implements _Rating {
   @override
   final double? rate;
   @override
-  final int? count;
+  final int count;
 
   @override
   String toString() {
@@ -142,14 +142,14 @@ class _$_Rating implements _Rating {
 }
 
 abstract class _Rating implements Rating {
-  const factory _Rating({final double? rate, final int? count}) = _$_Rating;
+  const factory _Rating(final double? rate, final int count) = _$_Rating;
 
   factory _Rating.fromJson(Map<String, dynamic> json) = _$_Rating.fromJson;
 
   @override
   double? get rate => throw _privateConstructorUsedError;
   @override
-  int? get count => throw _privateConstructorUsedError;
+  int get count => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_RatingCopyWith<_$_Rating> get copyWith =>

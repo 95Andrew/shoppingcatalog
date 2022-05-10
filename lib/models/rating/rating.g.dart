@@ -7,8 +7,8 @@ part of 'rating.dart';
 // **************************************************************************
 
 _$_Rating _$$_RatingFromJson(Map<String, dynamic> json) => _$_Rating(
-      rate: (json['rate'] as num?)?.toDouble(),
-      count: json['count'] as int?,
+      (json['rate'] as num?)?.toDouble(),
+      json['count'] as int,
     );
 
 Map<String, dynamic> _$$_RatingToJson(_$_Rating instance) => <String, dynamic>{

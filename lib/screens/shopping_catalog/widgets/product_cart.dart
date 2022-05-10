@@ -46,7 +46,7 @@ class ProductCart extends StatelessWidget {
                 color: AppColors.white,
                 alignment: Alignment.center, // use aligment
                 child: Image.network(
-                  product.image ?? '',
+                  product.image,
                   height: AppSizes.size350,
                   width: AppSizes.size200,
                   fit: BoxFit.fitWidth,
@@ -56,20 +56,20 @@ class ProductCart extends StatelessWidget {
           ),
           Row(
             children: [
-              Text(product.category ?? '', style: AppTextStyles.fontSize15FontWeight500Blue),
+              Text(product.category, style: AppTextStyles.fontSize15FontWeight500Blue),
               const Spacer(),
               CircleContainer(
                 isText: true,
-                rate: product.rating?.rate,
+                rate: product.rating.rate,
               ),
               const SizedBox(width: AppSizes.size10),
-              RectangleContainer(count: product.rating?.count)
+              RectangleContainer(count: product.rating.count)
             ],
           ),
           const SizedBox(height: AppSizes.size10),
-          Text(product.title ?? '', style: AppTextStyles.fontSize18FontWeight900),
+          Text(product.title , style: AppTextStyles.fontSize18FontWeight900),
           const SizedBox(height: AppSizes.size15),
-          Text(product.description ?? '', style: AppTextStyles.fontSize14FontWeight500),
+          Text(product.description, style: AppTextStyles.fontSize14FontWeight500),
           const SizedBox(height: AppSizes.size10),
           const Divider(
             height: AppSizes.size2,
